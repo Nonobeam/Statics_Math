@@ -51,11 +51,12 @@ plt.title('Histogram of Housing Prices')
 plt.legend()
 
 # Display the results below the graph
-plt.text(0.05, 0.85, f"Sample Mean: ${sample_mean:.2f}", transform=plt.gca().transAxes)
-plt.text(0.05, 0.8, f"Margin of Error: ${margin_of_error:.2f}", transform=plt.gca().transAxes)
-plt.text(0.05, 0.75, f"Confidence Interval: (${confidence_interval[0]:.2f}, ${confidence_interval[1]:.2f})", transform=plt.gca().transAxes)
-plt.text(0.05, 0.7, f"t-statistic: {t_statistic:.2f}", transform=plt.gca().transAxes)
-plt.text(0.05, 0.05, f"p-value: {p_value:.5f}", transform=plt.gca().transAxes)
+plt.text(0.02, -0.5, f"Sample Mean: ${sample_mean:.2f}\n"
+                     f"Margin of Error: ${margin_of_error:.2f}\n"
+                     f"Confidence Interval: (${confidence_interval[0]:.2f}, ${confidence_interval[1]:.2f})\n"
+                     f"t-statistic: {t_statistic:.2f}\n"
+                     f"p-value: {p_value:.5f}",
+         fontsize=12, transform=plt.gca().transAxes)
 
 # Show the plot
 plt.tight_layout()
